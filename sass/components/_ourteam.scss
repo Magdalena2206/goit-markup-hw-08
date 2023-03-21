@@ -1,0 +1,78 @@
+.ourteam {
+    background-color: #f5f4fa;
+    margin-left: auto;
+    margin-right: auto;
+    &__heading{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 100%;
+        color: $fontColor;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+  }
+  
+  .employees {
+    display: flex;
+    flex-direction: row;
+  }
+  .quarter {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 428px;
+    background-color: $backgroundColor;
+    border-radius: 0px 0px 4px 4px;
+    margin-inline: 15px;
+    &__img{
+        height: 260px;
+    width: 270px;
+    }
+    &__heading{
+        font-size: 16px;
+        line-height: 100%;
+        color: $fontColor;
+        padding-top: 10px;
+        text-align: center;
+    }
+    &__item{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        color: $inputColor;
+        padding-top: 10px;
+        text-align: center;
+    }
+  }
+  .social {
+    margin-inline: 15px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .social {
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    &__icon{
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+        align-items: center;
+        transition-duration: $transitionDuration;
+        transition-timing-function: $transitionTiming;
+        padding-left: 8px;
+    }
+    &__icon:hover{
+        --color2: $backgroundColor;
+        background-color: $borderColor;
+        border: 1px $borderColor;
+        cursor: $cursorType;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding-left: 8px;
+    }
+  }
+  

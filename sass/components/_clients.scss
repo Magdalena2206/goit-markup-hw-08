@@ -1,0 +1,38 @@
+.clients__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: $fontColor;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.clientsmark {
+  display: flex;
+  flex-direction: row;
+}
+.mark {
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #afb1b8;
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTiming;
+  
+  &__icon {
+    width: 90px;
+    height: 90px;
+    display: block;
+    padding-top: 20px;
+    margin: auto;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+  }
+}
+.mark:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  cursor: $cursorType;
+  --color2: $borderColor;
+}

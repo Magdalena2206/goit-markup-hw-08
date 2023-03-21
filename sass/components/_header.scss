@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: auto;
+    inline-size: 100%;
+    width: 1200px;
+}
+.logo__link {
+  color: $borderColor;
+  font-family: "Relaway", sans-serif;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+&__link--text {
+  color: #212121;
+}
+
+
+  .navigation {
+    padding-left: 93px;
+    padding-right: 318px;
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+    }
+   
+  }
+  
+  .part{
+    padding-right: 23px;
+padding-left: 23px;}
+
+&__link{
+    color: #212121;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+}
+
+&__link:hover{
+    color: $borderColor;
+}
+
+  .part--sign::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    margin-left: -51px;
+    margin-top: 50px;
+    background-color: $borderColor;
+    border-radius: 2px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .data {
+ 
+    display: flex;
+    
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    &__icon{
+        width: 21px;
+        height: 16px;
+        
+    }
+    &__link{
+        color:$inputColor;
+        font-size: 14px;
+        line-height: 100%;
+        text-decoration: none;
+        transition-duration:$transitionDuration;
+        transition-timing-function: $transitionTiming;
+    }}
+    .data__link:hover{
+        color: $borderColor;
+    }
+
