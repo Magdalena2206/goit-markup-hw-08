@@ -37,8 +37,8 @@ p {
   font-weight: 400;
 }
 .section {
-  padding-top: $paddingSection;
-  padding-bottom: $paddingSection;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -46,10 +46,23 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1200px){
+  .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}}
+  
+
 
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   inline-size: 100%;
+  width: 480px;
+  @media screen and (min-width: 768px) {
+    width: 760px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

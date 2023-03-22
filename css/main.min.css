@@ -95,7 +95,7 @@
   color: #2196f3;
 }
 .main {
-  height: 600px;
+  height: 400px;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -103,25 +103,43 @@
     rgba(0, 212, 255, 1) 100%
   );
   background-image: url(./people.jpg);
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column;}
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main {
+    background-image: url(./people@2x.jpg)
+  }}
+
 
 .main__heading {
   color: #ffffff;
-  font-size: 44px;
-  line-height: 136%;
+  font-size: 26px;
+  line-height: 162%;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 200px;
+  margin-top: 118px;
   margin-bottom: 30px;
-  width: 696px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-}
+  text-align: center;}
+  @media screen and (min-width: 1200px){
+  .main__heading {
+    font-size: 44px;
+  line-height: 136%;
+  margin-top: 200px;
+  
+  }
+  .main{
+    height: 600px;
+  }}
+  
+  
 
 .is-hidden {
   pointer-events: none;
@@ -277,7 +295,6 @@ textarea:focus {
   top: 0;
   left: 0;
   margin-left: 45px;
-
 }
 .colour1 {
   font-weight: 400;
@@ -352,13 +369,16 @@ textarea:focus {
 }
 
 .lorem {
-  display: flex;
-  flex-direction: row;
+  display:flex;
+  flex-direction: column;
+  
+  
 }
 .text {
+  
   margin-left: 15px;
   margin-right: 15px;
-  width: 270px;
+  width: 420px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -729,8 +749,8 @@ p {
   font-weight: 400;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -738,12 +758,25 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1200px){
+  .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}}
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   inline-size: 100%;
-} 
+  
+  @media screen and (min-width: 480px) {
+    width: 448px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 760px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }}
 .header--port {
   display: flex;
   flex-direction: row;
@@ -759,11 +792,11 @@ p {
 .header--port::after {
   content: "";
   position: absolute;
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
   width: 100%;
 
   top: 90px;
-  left:0;
+  left: 0;
 }
 .card {
   display: flex;
@@ -788,13 +821,13 @@ p {
 .boxes {
   border: #eeeeee 1px solid;
   margin-bottom: 30px;
-  position:relative;
+  position: relative;
   top: 0;
   right: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .boxes__img {
   width: 370px;
@@ -802,18 +835,17 @@ p {
 }
 .boxes .technocrack {
   visibility: hidden;
-  position:absolute;
+  position: absolute;
   width: 370px;
   height: 294px;
   bottom: 35%;
   right: 0;
   background: rgba(33, 150, 243, 0.9);
-
 }
 .boxes:hover .technocrack {
   visibility: visible;
   content: "";
-  position:absolute;
+  position: absolute;
   width: 370px;
   height: 294px;
   bottom: 35%;
@@ -823,31 +855,27 @@ p {
   animation-duration: 1s;
   animation-iteration-count: inherit;
   animation-direction: alternate;
-  
 }
 .technocrack {
-
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
-  color:  #ffffff;;
+  color: #ffffff;
   padding-left: 24px;
   padding-top: 49px;
   padding-right: 45px;
-  position:absolute;
+  position: absolute;
   bottom: 35%;
-  right:0;
+  right: 0;
   visibility: hidden;
-
 }
 
 @keyframes height {
   0% {
-    height: 0px; 
+    height: 0px;
   }
   100% {
     height: 294px;
-    
   }
 }
 .card__one {
