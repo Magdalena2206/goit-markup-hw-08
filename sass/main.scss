@@ -18,7 +18,12 @@ body {
 
 footer {
   background-color: $footerColor;
-  height: 252px;
+  height: 603px;
+}
+@media screen and (min-width: 1200px){
+  footer {
+    height: 252px;
+  }
 }
 a {
   color: $fontColor;

@@ -1,6 +1,7 @@
 .last {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
   &__part2 {
     display: flex;
     flex-direction: column;
@@ -32,15 +33,39 @@
     background-color: $footerColor;
   }
 }
-&__part1 {
-  padding-right: 70px;
+
+
+
+@media screen and (min-width: 768px){
+  .last {
+   text-align:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
+@media screen and (min-width: 1200px){
+  .last {
+   text-align:left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px){
+  
+  .last__part1 {
+    padding-top: 60px;
+    position:relative;
+    left:76px;
+  }}
+@media screen and (min-width: 1200px){
+  
+.last__part1 {
+  padding-right:70 px;
+  position:relative;
+  left:94px;
+}}
 
 .logo--footer {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  padding-bottom: 20px;
   padding-top: 60px;
 }
 
@@ -77,10 +102,6 @@
   text-decoration: none;
 }
 
-
-
-
-
 .last__icon:hover {
   color: $backgroundColor;
   background-color: $borderColor;
@@ -91,6 +112,40 @@
   padding-top: 10px;
   padding-left: 10px;
 }
+.last__part2 {
+  display: flex;
+  flex-direction: column;
+  
+}
+@media screen and (min-width:768px)
+{
+  .last__part2{
+    padding-top: 65px;
+    position:relative;
+  left:234px;
+  }}
+@media screen and (min-width:1200px)
+{
+  .last__part2{
+    padding-top: 72px;
+    position:relative;
+  left:171px;
+  }
+  
+}
+@media screen and (min-width:768px) {
+  .last__part3{
+    top:247;
+    position:relative;
+  left:166px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .last__part3{
+    position:relative;
+  left:171px;
+  }
+}
 .last__item--2 {
   font-weight: 700;
   font-size: 14px;
@@ -98,8 +153,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $backgroundColor;
-  padding-top: 72px;
-  padding-left: 78px;
+  padding-top: 60px;
+  
 }
 
 .last__part3 ::placeholder {
@@ -114,8 +169,7 @@
   border-radius: 4px;
   background-color: $borderColor;
   color: $backgroundColor;
-  position: absolute;
-  padding-right: px;
+  position: relative;
   font-size: 16px;
   line-height: 160%;
   align-items: center;
@@ -126,6 +180,13 @@
   transition-duration: $transitionDuration;
   transition-timing-function: $transitionTiming;
 }
+@media screen and (min-width:1200px){
+  .button--submit
+  {
+    position: relative;
+    bottom: 70px;
+    left:500px;
+}}
 .button__icon {
   width: 24px;
   height: 24px;
