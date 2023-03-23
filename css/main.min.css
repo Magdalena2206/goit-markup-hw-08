@@ -371,12 +371,15 @@ textarea:focus {
 .lorem {
   display:flex;
   flex-direction: column;
+  margin: 0 auto;
   
 }
+
 @media screen and (min-width: 768px){
   .lorem {
     flex-direction: row;
     flex-wrap: wrap;
+  
   }
   
 }
@@ -384,20 +387,26 @@ textarea:focus {
     .lorem {
       flex-direction: row;
       flex-wrap: nowrap;
+      justify-content: center;
+     
     }
     }
-
 
 .text {
   
   margin-left: 15px;
- margin-right: 15px;
-  width: 280px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
+   margin-right: 15px;
 
+  
+}
+@media screen and (min-width: 768px){
+  .text {
+width: 354px;
+  }}
+@media screen and (min-width: 1200px){
+  .text {
+width: 270px;
+  }}
 
   
 
@@ -409,6 +418,10 @@ textarea:focus {
   margin-right: auto;
   margin-bottom: 25px;
   margin-top: 25px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-size: 280px 120px;
+
 }
 .text__heading {
   font-weight: 700;
@@ -481,17 +494,25 @@ textarea:focus {
   line-height: 100%;
   color: #212121;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
+@media screen and (min-width: 1200px){
+  .ourteam__heading {
+    padding-bottom: 35px;
+  }
+  }
 .employees {
   display: flex;
   flex-direction: column;
+
   
 }
 @media screen and (min-width: 768px){
   .employees {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+   
   }
   }
 @media screen and (min-width: 1200px){
@@ -501,17 +522,39 @@ textarea:focus {
   }
 }
 .quarter {
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  height: 428px;
+  
+  margin-bottom:15px;
+  margin-top: 15px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  margin-inline: 15px;
+  
 }
-.quarter__img {
-  height: 260px;
-  width: 270px;
-}
+@media screen and (min-width: 768px){
+  .quarter {
+    margin: 15px;
+    width: 354px;
+  }}
+@media screen and (min-width: 1200px){
+  .quarter {
+    margin-inline: 15px;
+    width: 270px;
+  }}
+  .quarter__img{
+    width: 100%;
+    height: 460px;
+  }
+  @media screen and (min-width: 768px){
+    .quarter__img {
+      height: 374px;
+      
+    }}
+  @media screen and (min-width: 1200px){
+    .quarter__img {
+      height: 260px;
+    }}
 .quarter__heading {
   font-size: 16px;
   line-height: 100%;
@@ -569,18 +612,33 @@ textarea:focus {
 .clientsmark {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+@media screen and (min-width: 1200px){
+  .clientsmark {
+    
+    flex-wrap: nowrap;
+  }
+}
 .mark {
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin:15px;
   border: 1px solid #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px){
+  .mark {
+    width: 226px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .mark {
+    width: 170px;
+  }}
 .mark__icon {
   width: 90px;
   height: 90px;

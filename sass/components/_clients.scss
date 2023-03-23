@@ -9,10 +9,12 @@
 .clientsmark {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .mark {
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   margin-left: 10px;
   margin-right: 10px;
@@ -30,6 +32,22 @@
     transition-timing-function: $transitionTiming;
   }
 }
+@media screen and (min-width: 1200px){
+  .clientsmark {
+    
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px){
+  .mark {
+    width: 226px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .mark {
+    width: 170px;
+  }}
+  
 .mark:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
