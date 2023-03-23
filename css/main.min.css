@@ -371,19 +371,22 @@ textarea:focus {
 .lorem {
   display:flex;
   flex-direction: column;
-
+margin: 30px;
   
 }
 @media screen and (min-width: 768px){
   .lorem {
     flex-direction: row;
     flex-wrap: wrap;
-  }}
+  }
+  
+}
   @media screen and (min-width: 1200px){
     .lorem {
       flex-direction: row;
       flex-wrap: nowrap;
-    }}
+    }
+    }
 
 
 .text {
@@ -395,14 +398,10 @@ textarea:focus {
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-@media screen and(min-width:768px){
-  .text{
-    width: 354px;}
-}
-@media screen and(min-width:1200px){
-  .text{
-    width: 270px;}
-}
+
+
+  
+
 .text__icon {
   width: 70px;
   height: 70px;
@@ -426,8 +425,13 @@ textarea:focus {
   color: #2f303a;
 }
 .whatwedo {
+  display: none;
   justify-content: center;
 }
+@media screen and (min-width: 1200px){
+  .whatwedo {
+    display:block;
+  }}
 .whatwedo__heading {
   font-size: 36px;
   font-weight: 700;

@@ -1,4 +1,5 @@
 .whatwedo {
+  display: none;
     justify-content: center;
     &__heading{
         font-size: 36px;
@@ -8,7 +9,11 @@
         text-align: center;
         padding-bottom: 50px;
     }
-  }
+    @media screen and (min-width: 1200px){
+      .whatwedo {
+        display:block;
+      }
+  }}
   
   .photo {
     display: flex;
