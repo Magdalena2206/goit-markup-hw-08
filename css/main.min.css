@@ -1180,7 +1180,7 @@ p {
   flex-direction: row;
 }
 
-.menu-toggle {
+ .menu-toggle {
   width: 47px;
   height: 30px;
   position: relative;
@@ -1188,6 +1188,8 @@ p {
   bottom: 1px;
   
 }
+
+
 .menu-container {
   background: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -1207,7 +1209,7 @@ p {
     display: none;
   }
 }
-.mobile-menu{
+.mobile-nav{
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
@@ -1230,7 +1232,7 @@ p {
   color: #2196F3;
   cursor: pointer;
 }
-.window-mobile {
+.mobile-menu {
   background-color: #ffffff;
   border-radius: 4px;
   width: 480px;
