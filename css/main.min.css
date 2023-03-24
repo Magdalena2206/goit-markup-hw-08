@@ -20,20 +20,50 @@
 @media screen and (min-width:1200px){
   .header{
     display: flex;
+    flex-wrap: nowrap;
     
   }}
-
+  .header_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: auto;
+    inline-size: 100%;
+  }
+  @media screen and (min-width:768px){
+    .header_mobile{
+      display: none;
+      
+      
+    }}
+  
+  @media screen and (min-width:1200px){
+    .header_mobile{
+      display: none;
+      
+    }}
 .logo__link {
   color: #2196f3;
   font-family: "Relaway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 100%;
   font-weight: 700;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
+@media screen and (min-width:1200px){
+  .logo__link{
+    font-size: 26px;
+    
+  }}
 .logo__link--text {
   color: #212121;
 }
+
 .navigation {
   padding-left: 93px;
   padding-right: 318px;
@@ -43,6 +73,11 @@
     padding-right: 50px;
     padding-left: 50px;
   }}
+  @media screen and (min-width:1200px){
+    .navigation{
+      padding-left: 93px;
+  padding-right: 318px;
+    }}
 .navigation__nav {
   
   display: flex;
@@ -60,14 +95,19 @@
   padding-left: 30px;
     
   }}
+  @media screen and (min-width:1200px){
+    .part {
+      padding-right: 23px;
+  padding-left: 23px;
+    }}
 .part__link {
   color: #212121;
   font-size: 14px;
   line-height: 100%;
   text-decoration: none;
-  -webkit-transition-duration: 250ms;
+ 
   transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .part__link:hover {
@@ -89,6 +129,11 @@
     
     
   }}
+  @media screen and (min-width:1200px){
+    .part--sign::after{
+      margin-top: 50px;
+      
+    }}
 .contact {
  
   display: flex;
@@ -98,9 +143,13 @@
 @media screen and (min-width:768px){
   .contact{
     flex-direction: column;
-    
-    
+
   }}
+  @media screen and (min-width:1200px){
+    .contact{
+      flex-direction: row;
+    
+    }}
 .data {
   display: flex;
 
@@ -112,10 +161,24 @@
   .data{
     padding-bottom: 10px;
   }}
+  @media screen and (min-width:1200px){
+    .data{
+      padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+    }}
 .data__icon {
   width: 21px;
   height: 16px;
 }
+.data__icon--mobile {
+  width: 47px;
+  height: 30px;
+  position: absolute;
+  left:420px;
+}
+
+
 .data__link {
   color: #757575;
   font-size: 14px;
@@ -129,6 +192,8 @@
 .data__link:hover {
   color: #2196f3;
 }
+
+
 .main {
   height: 400px;
   background: linear-gradient(
