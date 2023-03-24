@@ -1,5 +1,5 @@
 .header {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-items: center;
   align-items: center;
@@ -10,6 +10,19 @@
   inline-size: 100%;
   width: 1200px;
 }
+@media screen and (min-width:768px){
+  .header{
+    display: flex;
+    
+    
+  }}
+
+@media screen and (min-width:1200px){
+  .header{
+    display: flex;
+    
+  }}
+
 .logo__link {
   color: #2196f3;
   font-family: "Relaway", sans-serif;
@@ -25,19 +38,28 @@
   padding-left: 93px;
   padding-right: 318px;
 }
+@media screen and (min-width:768px){
+  .navigation{
+    padding-right: 50px;
+    padding-left: 50px;
+  }}
 .navigation__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
+  
   flex-direction: row;
 }
+
 .part {
   padding-right: 23px;
   padding-left: 23px;
 }
+@media screen and (min-width:768px){
+  .part {
+    padding-right: 30px;
+  padding-left: 30px;
+    
+  }}
 .part__link {
   color: #212121;
   font-size: 14px;
@@ -61,15 +83,24 @@
   background-color: #2196f3;
   border-radius: 2px;
 }
+@media screen and (min-width:768px){
+  .part--sign::after{
+    margin-top: 63px;
+    
+    
+  }}
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
+ 
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
+  
   flex-direction: row;
 }
+@media screen and (min-width:768px){
+  .contact{
+    flex-direction: column;
+    
+    
+  }}
 .data {
   display: flex;
 
@@ -77,6 +108,10 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width:768px){
+  .data{
+    padding-bottom: 10px;
+  }}
 .data__icon {
   width: 21px;
   height: 16px;
