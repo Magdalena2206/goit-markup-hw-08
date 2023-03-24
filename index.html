@@ -56,7 +56,9 @@
 <div class="header_mobile">
     <div class="logo">
         <a class="logo__link" href="./index.html">Web<span class="logo__link logo__link--text">Studio</span></a>
-        <svg class="data__icon--mobile">
+        
+            <svg class="menu-toggle js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
             <use href="./images/icons.svg#icon-menu_24px" width="47px" height="30px"></use>
         </svg>
     </div>
@@ -380,17 +382,35 @@
 
 
     </div>
+<div class="menu-container js-menu-container is hidden" id="mobile-menu">
+    <div class="window--mobile js-menu-container">
+        
+            <nav class="mobile-menu">
+                <a class="part__link--menu" href="#">Agencja</a>
+                <a class="part__link--menu" href="./portfolio.html">Portfolio</a>
+                <a class="part__link--menu" href="#">Kontakty</a>
+            </nav>
+
+        
+        <div class="contact--mobile">
+            
+            <a class="data__link--mobile1" href="mailto:info@devstudio.com">info@devstudio.com</a>
 
 
-
+                 
+                <a class="data__link--mobile2" href="tel:+48111111111">+48 111 111 111</a></div>
+                <div class="mobile-socials">
+                    <p class="mobile__items">Instagram</p>
+                    <p class="mobile__items">Twitter</p>
+                    <p class="mobile__items">Facebook</p>
+                    <p class="mobile__items">LinkedIn</p>
+                <button class="menu-toggle js-close-menu">X</button>
+        </div>
+   
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+    
     <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>

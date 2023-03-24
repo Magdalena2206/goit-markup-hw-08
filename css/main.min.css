@@ -171,13 +171,6 @@
   width: 21px;
   height: 16px;
 }
-.data__icon--mobile {
-  width: 47px;
-  height: 30px;
-  position: absolute;
-  left:420px;
-}
-
 
 .data__link {
   color: #757575;
@@ -1187,4 +1180,110 @@ p {
   flex-direction: row;
 }
 
+.menu-toggle {
+  width: 47px;
+  height: 30px;
+  position: relative;
+  left:270px;
+  bottom: 1px;
+  
+}
+.menu-container {
+  background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+   
+}
+@media screen and (min-width:768px) {
+  .menu-container{
+    display: none;
+  }
+}
+@media screen and (min-width:1200px) {
+  .menu-container{
+    display: none;
+  }
+}
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+  margin-left: 40px;
+  
+}
+.part__link--menu{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color:#212121;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.part__link--menu:hover{
+  color: #2196F3;
+  cursor: pointer;
+}
+.window-mobile {
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 480px;
+  height: 796px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  
+}
+
+  
+    
+    .contact--mobile{
+      display: flex;
+    flex-direction:column;
+    margin-left: 40px;
+    margin-top: 302px;
+    }
+.data__link--mobile1{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 100%;
+letter-spacing: 0.02em;
+color: #2196F3;
+text-decoration: none;
+padding-bottom: 16px;
+}
+.data__link--mobile2{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0.02em;
+color: #757575;
+padding-top: 16px;
+}
+.mobile-socials{
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-top: 64px;
+}
+.mobile__items{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 122%;
+letter-spacing: 0.02em;
+color: #2196F3;
+padding-right: 20px;
+}
 /*# sourceMappingURL=main.min.css.map */
