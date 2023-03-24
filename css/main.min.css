@@ -1180,7 +1180,7 @@ p {
   flex-direction: row;
 }
 
- .menu-toggle {
+ .mobile-svg {
   width: 47px;
   height: 30px;
   position: relative;
@@ -1287,5 +1287,16 @@ line-height: 122%;
 letter-spacing: 0.02em;
 color: #2196F3;
 padding-right: 20px;
+}
+.menu-toggle{
+  position: fixed;
+    width: 19px;
+    height: 19px;
+    right: 20px;
+    top: 20px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
 }
 /*# sourceMappingURL=main.min.css.map */
