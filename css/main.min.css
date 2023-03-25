@@ -1,6 +1,5 @@
 .header {
   display: none;
-  flex-direction: row;
   justify-items: center;
   align-items: center;
   margin-left: auto;
@@ -8,12 +7,13 @@
   padding-bottom: 32px;
   margin-right: auto;
   inline-size: 100%;
-  width: 1200px;
+  
 }
 @media screen and (min-width:768px){
   .header{
     display: flex;
-    
+    flex-direction: row;
+ 
     
   }}
 
@@ -21,7 +21,7 @@
   .header{
     display: flex;
     flex-wrap: nowrap;
-    
+   
   }}
   .header_mobile{
     display: flex;
@@ -143,7 +143,7 @@
 @media screen and (min-width:768px){
   .contact{
     flex-direction: column;
-
+margin-left: 20px;
   }}
   @media screen and (min-width:1200px){
     .contact{
@@ -160,6 +160,7 @@
 @media screen and (min-width:768px){
   .data{
     padding-bottom: 10px;
+    
   }}
   @media screen and (min-width:1200px){
     .data{
@@ -1072,7 +1073,8 @@ p {
     width: 1200px;
   }}
   .header--port {
-    display: none;
+    
+      display: flex;
       flex-direction: row;
       justify-items: center;
       align-items: center;
@@ -1082,20 +1084,9 @@ p {
       margin-right: auto;
       inline-size: 100%;
       width: 1200px;
-  }
-  @media screen and (min-width:768px){
-    .header--port{
-      display: flex;
-      
-      
-    }}
+    }
   
-  @media screen and (min-width:1200px){
-    .header--port{
-      display: flex;
-      flex-wrap: nowrap;
-      
-    }}
+
 .header--port::after {
   content: "";
   position: absolute;
