@@ -1,15 +1,28 @@
 .header--port {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: auto;
-  inline-size: 100%;
-  width: 1200px;
+  display: none;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: auto;
+    inline-size: 100%;
+    width: 1200px;
 }
+@media screen and (min-width:768px){
+  .header--port{
+    display: flex;
+    
+    
+  }}
+
+@media screen and (min-width:1200px){
+  .header--port{
+    display: flex;
+    flex-wrap: nowrap;
+    
+  }}
 .header--port::after {
   content: "";
   position: absolute;

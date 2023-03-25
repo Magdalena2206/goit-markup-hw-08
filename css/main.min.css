@@ -132,7 +132,7 @@
   @media screen and (min-width:1200px){
     .part--sign::after{
       margin-top: 50px;
-      
+      margin-left: 47px;
     }}
 .contact {
  
@@ -995,6 +995,7 @@ left:15px;
   margin-bottom: 50px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .second__button {
   padding-right: 4px;
@@ -1004,9 +1005,9 @@ left:15px;
 .button--portf {
   border: none;
   padding-top: 6px;
-  padding-left: 22px;
+  padding-left: 13px;
   padding-bottom: 6px;
-  padding-right: 22px;
+  padding-right: 13px;
   border-radius: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1070,18 +1071,31 @@ p {
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }}
-.header--port {
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: auto;
-  inline-size: 100%;
-  width: 1200px;
-}
+  .header--port {
+    display: none;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center;
+      margin-left: auto;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-right: auto;
+      inline-size: 100%;
+      width: 1200px;
+  }
+  @media screen and (min-width:768px){
+    .header--port{
+      display: flex;
+      
+      
+    }}
+  
+  @media screen and (min-width:1200px){
+    .header--port{
+      display: flex;
+      flex-wrap: nowrap;
+      
+    }}
 .header--port::after {
   content: "";
   position: absolute;
