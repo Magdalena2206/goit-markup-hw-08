@@ -103,7 +103,7 @@
         padding-left: 8px;
     }
     &__icon:hover{
-        --color2: $backgroundColor;
+        --color3: $backgroundColor;
         background-color: $borderColor;
         border: 1px $borderColor;
         cursor: $cursorType;
@@ -113,4 +113,5 @@
         padding-left: 8px;
     }
   }
+  
   

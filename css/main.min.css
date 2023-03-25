@@ -118,7 +118,7 @@
   position: absolute;
   width: 53px;
   height: 4px;
-  margin-left: -51px;
+  margin-left: 62px;
   margin-top: 50px;
   background-color: #2196f3;
   border-radius: 2px;
@@ -696,7 +696,7 @@ width: 270px;
   padding-left: 8px;
 }
 .social__icon:hover {
-  --color2: #ffffff;
+  --color3: #ffffff;
   background-color: #2196f3;
   border: 1px #2196f3;
   cursor: pointer;
@@ -756,13 +756,12 @@ width: 270px;
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
-  --color2: #2196f3;
+  --color3: #2196f3;
 }
 .last {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
 }
 @media screen and (min-width: 768px){
   .last {
@@ -776,8 +775,10 @@ width: 270px;
    text-align:left;
     flex-direction: row;
     flex-wrap: nowrap;
+    
   }
 }
+
 @media screen and (min-width: 768px){
   
   .last__part1 {
@@ -794,10 +795,14 @@ width: 270px;
 }}
 
 .logo--footer {
-  padding-bottom: 20px;
-  
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
-
+@media screen and (min-width: 768px){
+  
+  .logo--footer {
+    margin-top: 18px;
+  }}
 
 .logo__link--text2 {
   color: #ffffff;
@@ -926,8 +931,9 @@ left:15px;
 @media screen and (min-width:1200px){
   .last__input
   {
-    width: 358px;
-   
+    width: 340px;
+    position: relative;
+   left: 0;
 
 }}
 .last__part3 ::placeholder {
@@ -1180,7 +1186,7 @@ p {
   flex-direction: row;
 }
 
- .js-open-menu {
+ .menu-toggle {
   width: 50px;
   height: 50px;
   position: relative;
@@ -1199,25 +1205,8 @@ p {
   z-index: 10;
 }
 
-.menucontainer {
-  background: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-   
-}
-@media screen and (min-width:768px) {
-  .menu-container{
-    display: none;
-  }
-}
-@media screen and (min-width:1200px) {
-  .menu-container{
-    display: none;
-  }
-}
+
+
 .mobile-nav{
   display: flex;
   flex-direction: column;
@@ -1252,7 +1241,16 @@ p {
   z-index: 50;
 }
 
-  
+@media screen and (min-width:768px) {
+  .menu-container{
+    display: none;
+  }
+}
+@media screen and (min-width:1200px) {
+  .menu-container{
+    display: none;
+  }
+}
     
     .contact--mobile{
       display: flex;
@@ -1305,5 +1303,14 @@ padding-right: 20px;
     top: 16px;
    border: none;
     cursor: pointer;
+}
+.js-close-menu:hover{
+color: #2196F3;
+cursor:pointer;
+}
+.is-open {
+  pointer-events: none;
+  visibility:visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.min.css.map */
