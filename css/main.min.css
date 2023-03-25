@@ -1181,16 +1181,25 @@ p {
 }
 
  .js-open-menu {
-  width: 47px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   position: relative;
   left:270px;
-  bottom: 1px;
-  
+  bottom: 2px;
+  z-index: 1;
+  background: none;
+  border: none;
+}
+.menu-toggle__svg{
+  width: 47px;
+  height: 30px;
+  position: absolute;
+  right:1px;
+  bottom: 6px;
+  z-index: 10;
 }
 
-
-.menu-container {
+.menucontainer {
   background: rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
@@ -1232,7 +1241,7 @@ p {
   color: #2196F3;
   cursor: pointer;
 }
-.menu-toggle {
+.menu-container {
   background-color: #ffffff;
   border-radius: 4px;
   width: 480px;
@@ -1240,7 +1249,7 @@ p {
   top: 0;
   left: 0;
   position: fixed;
-  
+  z-index: 50;
 }
 
   
@@ -1292,11 +1301,9 @@ padding-right: 20px;
   position: fixed;
     width: 19px;
     height: 19px;
-    left: 445px;
+    left: 444px;
     top: 16px;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+   border: none;
     cursor: pointer;
 }
 /*# sourceMappingURL=main.min.css.map */

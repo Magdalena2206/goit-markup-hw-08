@@ -57,10 +57,12 @@
     <div class="logo">
         <a class="logo__link" href="./index.html">Web<span class="logo__link logo__link--text">Studio</span></a>
         
-        <svg class=".menu-toggle js-open-menu" js-open-menu 
-        aria-controls="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"><svg class="menu-toggle__svg">
         <use href="./images/icons.svg#icon-menu_24px" width="47px" height="30px"></use>
-    </svg>
+    </svg></button>
     </div>
     </header>
     <main>
@@ -383,8 +385,8 @@
 
     </div>
     
-<div class="menu-container js-menu-container ishidden"  id="mobile-menu">
-    <div class="menu-toggle js-menu-container " >
+<div class="menu-container js-menu-container is-hidden"  id="mobile-menu">
+    <div class="mobile-menu">
         
             <nav class="mobile-nav">
                 <a class="part__link--menu" href="#">Agencja</a>
@@ -405,7 +407,7 @@
                     <p class="mobile__items">Twitter</p>
                     <p class="mobile__items">Facebook</p>
                     <p class="mobile__items">LinkedIn</p>
-                <button class="menu-toggle js-close-menu" js-close-menu >X</button>
+                <button class="menu-toggle js-close-menu">X</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
