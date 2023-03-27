@@ -125,7 +125,7 @@
 }
 @media screen and (min-width:768px){
   .part--sign::after{
-    margin-top: 63px;
+    margin-top: 49px;
     
     
   }}
@@ -143,12 +143,16 @@
 @media screen and (min-width:768px){
   .contact{
     flex-direction: column;
-margin-left: 22px;
-margin-right: 0px;
+    position: absolute;
+top:25px;
+right: 0px;
   }}
   @media screen and (min-width:1200px){
     .contact{
-      flex-direction: row;
+      flex-direction:row;
+      position: absolute;
+      right: 0px;
+      top: 40px;
     }}
 .data {
   display: flex;
