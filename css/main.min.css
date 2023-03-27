@@ -46,6 +46,11 @@
       display: none;
       
     }}
+    @media screen and (min-width:1200px){
+      .logo{
+        position: relative;
+        left: 50px;
+      }}
 .logo__link {
   color: #2196f3;
   font-family: "Relaway", sans-serif;
@@ -151,7 +156,7 @@ right: 0px;
     .contact{
       flex-direction:row;
       position: absolute;
-      right: 0px;
+      right: 30px;
       top: 40px;
     }}
 .data {
